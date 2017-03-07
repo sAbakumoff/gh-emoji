@@ -54,9 +54,9 @@ FROM
   `in-full-gear.Dataset1.commits_with_emojis`,
   UNNEST(emoji) AS emoji
 ```
-The result is available in (emoji.csv)
+The result is available in [emoji.csv](emoji.csv)
 
-## Run R script to obtain the summary information
+## Run [R script](emoji.R) to obtain the summary information
 ```R
 library("dplyr")
 emoji<-read.csv(file="emoji.csv", h=TRUE)
